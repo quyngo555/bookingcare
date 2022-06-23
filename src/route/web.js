@@ -8,6 +8,7 @@ let initWebRoutes = (app) => {
     router.get("/quyngo", (req, res) => {
         return res.send('QuyNgo is number 1')
     });
+    router.get("/crud", hometController.getCRUD)
 
 
     return app.use("/", router)
